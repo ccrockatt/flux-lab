@@ -1,9 +1,0 @@
-apiVersion: iam.aws.upbound.io/v1beta1
-kind: Group
-metadata:
-  name: crossplane-test-group-crossplane-test-group-crossplane-test-group-crossplane-test-group-crossplane-test-group-crossplane-test-group
-spec:
-  forProvider:
-    path: /users/
-  providerConfigRef:
-    name: default
