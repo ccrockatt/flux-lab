@@ -9,7 +9,7 @@ spec:
     source: Inline
     module: |
       resource "aws_s3_bucket" "innovation_test_bucket" {
-        bucket = "kanata_innovation_test"
+        bucket = "kanata_innovation_test_bad"
       
         tags = {
           Name        = "Innovation Test Bucket"
