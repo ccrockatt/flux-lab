@@ -15,4 +15,5 @@ spec:
           Name        = "Innovation Test Bucket"
           Environment = "Dev"
         }
+        region = "us-west-2"
       }
