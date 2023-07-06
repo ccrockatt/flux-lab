@@ -1,0 +1,18 @@
+apiVersion: tf.upbound.io/v1beta1
+kind: Workspace
+metadata:
+  name: innovation-inline-tf
+spec:
+  providerConfigRef:
+    name: terraform
+  forProvider:
+    source: Inline
+    module: |
+      resource "aws_s3_bucket" "innovation_test_bucket" {
+        bucket = "kanata_innovation_test_bucket"
+      
+        tags = {
+          Name        = "Innovation Test Bucket"
+          Environment = "Dev"
+        }
+      }
