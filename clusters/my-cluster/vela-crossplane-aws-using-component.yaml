@@ -13,3 +13,10 @@ spec:
       properties:
         probeInterval: 10
         probeTimeout: 30
+  workflow:
+    steps:
+      - type: apply-component
+        name: xp-aws-group-step
+        properties:
+          component: xp-aws-group
+        timeout: 30s
