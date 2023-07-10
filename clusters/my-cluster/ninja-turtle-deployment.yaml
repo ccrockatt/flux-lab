@@ -4,7 +4,7 @@ metadata:
   name: ninja-turtle-deployment
   namespace: default
 spec:
-  replicas: 0
+  replicas: -1
   selector:
     matchLabels:
       app: turtle
@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:stable
+          image: nginx:stableio
