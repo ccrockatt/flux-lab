@@ -1,9 +1,0 @@
-apiVersion: core.oam.dev/v1beta1
-kind: Application
-metadata:
-  name: vela-xp-aws 
-  namespace: kubevela-apps
-spec:
-  components:
-    - name: xp-aws-group
-      type: crossplane-aws-group-vela-comp
