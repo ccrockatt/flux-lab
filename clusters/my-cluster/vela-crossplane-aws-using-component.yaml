@@ -7,3 +7,9 @@ spec:
   components:
     - name: xp-aws-group
       type: crossplane-aws-group-vela-comp
+  policies:
+    - name: healthy
+      type: health
+      properties:
+        probeInterval: 10
+        probeTimeout: 30
