@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:stableio
+          image: nginx:stable
