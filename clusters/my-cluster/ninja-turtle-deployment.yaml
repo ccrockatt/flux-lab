@@ -4,7 +4,7 @@ metadata:
   name: ninja-turtle-deployment
   namespace: default
 spec:
-  replicas: -1
+  replicas: 0
   selector:
     matchLabels:
       app: turtle
