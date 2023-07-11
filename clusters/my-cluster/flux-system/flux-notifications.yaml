@@ -1,10 +1,10 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta2
 kind: Provider
 metadata:
-  name: slack-second-module
+  name: slack
   namespace: flux-system
 spec:
   type: slack
-  channel: flux-second-module
+  channel: flux-notifications
   secretRef:
-    name: slack-url-flux-second-module
+    name: slack-url
