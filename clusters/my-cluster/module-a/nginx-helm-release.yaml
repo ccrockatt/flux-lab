@@ -15,4 +15,4 @@ spec:
       interval: 1m
   values:
     service:
-      type: clusterIP
+      type: ClusterIP
