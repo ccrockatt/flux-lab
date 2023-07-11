@@ -16,4 +16,4 @@ spec:
       interval: 1m
   values:
     service:
-      type: ClusterIP
+      type: LoadBalancer
