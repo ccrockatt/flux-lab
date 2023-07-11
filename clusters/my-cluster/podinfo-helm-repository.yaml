@@ -4,5 +4,5 @@ metadata:
   name: podinfo
   namespace: default
 spec:
-  interval: 1m
+  interval: 2m
   url: https://stefanprodan.github.io/podinfo
