@@ -11,5 +11,7 @@ spec:
   eventSources:
     - kind: HelmRepository
       name: '*'
+      namespace: '*'
     - kind: HelmRelease
       name: '*'
+      namespace: '*'
