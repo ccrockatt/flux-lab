@@ -11,7 +11,5 @@ spec:
   eventSources:
     - kind: HelmRepository
       name: '*'
-      namespace: default
     - kind: HelmRelease
       name: '*'
-      namespace: default
