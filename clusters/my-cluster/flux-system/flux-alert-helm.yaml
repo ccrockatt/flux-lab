@@ -6,7 +6,7 @@ metadata:
 spec:
   summary: "testing helm alerts - info"
   providerRef:
-    name: slack
+    name: slack-second-module
   eventSeverity: info
   eventSources:
     - kind: HelmRepository
