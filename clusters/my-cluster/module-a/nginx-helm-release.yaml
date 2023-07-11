@@ -13,3 +13,6 @@ spec:
         name: nginx
         namespace: nginx
       interval: 1m
+  values:
+    service:
+      type: clusterIP
