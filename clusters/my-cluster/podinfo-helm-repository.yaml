@@ -5,4 +5,4 @@ metadata:
   namespace: default
 spec:
   interval: 1m
-  url: https://stefanprodan.github.io/podinfo-invalid
+  url: https://stefanprodan.github.io/podinfo
