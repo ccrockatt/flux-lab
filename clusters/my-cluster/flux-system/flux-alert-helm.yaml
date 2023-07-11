@@ -1,0 +1,15 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta2
+kind: Alert
+metadata:
+  name: flux-info-alert-helm
+  namespace: flux-system
+spec:
+  summary: "testing helm alerts - info"
+  providerRef:
+    name: slack-second-module
+  eventSeverity: info
+  eventSources:
+    - kind: HelmRepository
+      name: '*'
+    - kind: HelmRelease
+      name: '*'
