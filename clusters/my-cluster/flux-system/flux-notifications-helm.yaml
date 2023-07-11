@@ -7,4 +7,4 @@ spec:
   type: slack
   channel: flux-second-module
   secretRef:
-    name: slack-url
+    name: slack-url-flux-second-module
