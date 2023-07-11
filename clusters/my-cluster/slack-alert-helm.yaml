@@ -4,12 +4,11 @@ metadata:
   name: slack-helm-alert
   namespace: flux-system
 spec:
-  summary: "helm alert test"
+  summary: "local k3d cluster helm alert test"
   providerRef:
     name: slack-helm
   eventSeverity: info
   eventSources:
-    - kind: GitRepository
+    - kind: HelmRepository
       name: '*'
-    - kind: Kustomization
-      name: '*'
+      namespace: default
