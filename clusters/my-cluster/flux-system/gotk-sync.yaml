@@ -26,4 +26,4 @@ spec:
     kind: GitRepository
     name: flux-system
   wait: true
-  timeout: 2m0s
+  timeout: 30s
