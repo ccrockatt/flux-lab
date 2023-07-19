@@ -1,0 +1,17 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta2
+kind: Alert
+metadata:
+  name: slack-helm-alert-mysql
+  namespace: flux-system
+spec:
+  summary: "mysql helm alert test"
+  providerRef:
+    name: slack-helm
+  eventSeverity: info
+  eventSources:
+    - kind: HelmRepository
+      name: '*'
+      namespace: nginx
+    - kind: HelmRelease
+      name: '*'
+      namespace: nginx
