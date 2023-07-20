@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta2
+kind: Provider
+metadata:
+  name: slack-helm
+  namespace: flux-system
+spec:
+  type: slack
+  channel: flux-second-module
+  secretRef:
+    name: slack-url-second-module-2
