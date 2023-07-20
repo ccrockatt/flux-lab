@@ -1,17 +1,17 @@
 apiVersion: notification.toolkit.fluxcd.io/v1beta2
 kind: Alert
 metadata:
-  name: slack-helm-alert
+  name: slack-helm-alert-mysql
   namespace: flux-system
 spec:
-  summary: "local k3d cluster helm alert test"
+  summary: "mysql helm alert test"
   providerRef:
     name: slack-helm
   eventSeverity: info
   eventSources:
     - kind: HelmRepository
       name: '*'
-      namespace: default
+      namespace: nginx
     - kind: HelmRelease
       name: '*'
-      namespace: default
+      namespace: nginx
