@@ -1,2 +1,0 @@
-This is designed to simulate an atmos-tfmodule such as teamcity which would be pulled in from helm and should have
-separate notifications from other modules which would go to a dedicated slack channel for that team.
