@@ -19,11 +19,9 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 2m30s
+  interval: 10m0s
   path: ./clusters/flagger-test
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-  wait: true
-  timeout: 2m
