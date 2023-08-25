@@ -7,7 +7,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`guidewire.com`)
+    - match: Host(`app.example.com`)
       kind: Rule
       services:
         - name: podinfo
